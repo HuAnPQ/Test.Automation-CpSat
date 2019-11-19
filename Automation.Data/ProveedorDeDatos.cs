@@ -11,7 +11,7 @@ namespace Automation.Data
     public class ProveedorDeDatos
     {
 
-        IEnumerable<Busqueda> ConsultarBusquedasDeExcel()
+        public IEnumerable<Busqueda> ConsultarBusquedasDeExcel()
         {
             var memoryStream = new MemoryStream(Recursos.Archivos.Busquedas);
             return new ExcelMapper(memoryStream) { HeaderRow = true }.Fetch<Busqueda>();
