@@ -57,6 +57,9 @@
     <Compile Include="AutomationDataTest.cs" />
     <Compile Include="BusquedasPorDatosDeManeraParalela.cs" />
     <Compile Include="BusquedaWikipediaPorDatos.cs" />
+    <Compile Include="IWebRemote.cs" />
+    <Compile Include="JsAlertTest.cs" />
+    <Compile Include="PageModels\JsAlertPaginaWeb.cs" />
     <Compile Include="PruebaDeProdubancoEnWiki.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

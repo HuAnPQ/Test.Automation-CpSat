@@ -33,6 +33,7 @@ namespace Test.Automation
              * **/
             string tituloDeseado = "Institute For Ocean Management";
             driver.Navigate().GoToUrl(@URL_ANNAUNIV);
+            driver.Manage().Window.Maximize();
             driver.FindElement(By.XPath("/html/body/table/tbody/tr[1]/td[1]/table/tbody/tr/td[1]/table/tbody/tr/td/table/tbody/tr/td[5]/div/a"))
                 .Click();
 
