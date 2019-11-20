@@ -37,10 +37,10 @@ namespace Test.Automation
                 .Click();
 
             IWebElement civil = driver.FindElement(By.XPath("/html/body/table/tbody/tr/td/table/tbody/tr[3]/td/table/tbody/tr[2]/td[2]/table/tbody/tr/td/table/tbody/tr[2]/td[2]/div/a"));
-            new Actions(driver).MoveToElement(civil).Build().Perform();
+            new Actions(driver).MoveToElement(civil, 0, 0, MoveToElementOffsetOrigin.Center).Build().Perform();
             Thread.Sleep(10000);
             IWebElement ocean = driver.FindElement(By.Id("menuItemText32"));
-            new Actions(driver).MoveToElement(ocean).Click().Build().Perform();
+            new Actions(driver).MoveToElement(ocean, 0, 0, MoveToElementOffsetOrigin.Center).Click().Build().Perform();
             Thread.Sleep(10000);
 
             string titulo = driver.Title;
