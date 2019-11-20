@@ -54,6 +54,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AutomationDataTest.cs" />
+    <Compile Include="BusquedasPorDatosDeManeraParalela.cs" />
     <Compile Include="BusquedaWikipediaPorDatos.cs" />
     <Compile Include="PruebaDeProdubancoEnWiki.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
