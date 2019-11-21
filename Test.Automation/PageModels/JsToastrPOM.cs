@@ -61,8 +61,8 @@ namespace Test.Automation.PageModels
 
         public object GetTypeToast(string type)
         {
-            return this._driver.FindElement(By.Id(TOASTCONTAINER_ID))
-                .FindElement(By.CssSelector(".toast-" + type));
+            IWebElement contenedor = this._driver.FindElement(By.Id(TOASTCONTAINER_ID));
+            return contenedor;
         }
 
         public string GetAlertText()
